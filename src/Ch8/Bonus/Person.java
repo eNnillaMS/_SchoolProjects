@@ -1,4 +1,4 @@
-package Chapter8;
+package Ch8.Bonus;
 public class Person {
     private String firstName;
     private String lastName;

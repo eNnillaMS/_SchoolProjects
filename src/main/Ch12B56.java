@@ -1,8 +1,8 @@
-package werk;
+package main;
 import java.util.Scanner;
 public class Ch12B56 {
     static Scanner input = new Scanner(System.in);
-    public static void WSC (){
+    public void WSC (){
         System.out.println("Welcome to the Weekly Salary and Pay Slip Calculator!");
         System.out.print("Please enter your family name: ");
         String nameLast = input.nextLine();
@@ -66,7 +66,7 @@ public class Ch12B56 {
         double net = gross * tax + donation;
         System.out.println("Net Weekly Pay:    $" + net);
     }
-    public static void Change (){
+    public void Change (){
         System.out.print("Please enter the amount of change in cents you have (<100): ");
         int num = input.nextInt();
         if (num < 100){
@@ -109,7 +109,7 @@ public class Ch12B56 {
             System.out.println("I did note that it had to be less than 100, didn't I? Quitting...");
         }
     }
-    public static void Simpleton (){
+    public void Simpleton (){
         System.out.println("Welcome to the Simpleton Tax Calculator!");
         System.out.print("What is your annual salary?: $");
         double income = input.nextDouble();
@@ -131,7 +131,7 @@ public class Ch12B56 {
         if (tax >= 0) System.out.println("\nTax payable: $" + tax);
         else System.out.println("\nRefund availible: $" + (tax * -1));
     }
-    public static void SINs (){
+    public void SINs (){
         System.out.println("The list of valid Social Insurance Numbers includes: ");
         for (int i = 0; i <= 999999999; i++){
             String number = String.valueOf(i);

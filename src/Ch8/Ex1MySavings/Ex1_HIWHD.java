@@ -1,9 +1,9 @@
 package Ch8.Ex1MySavings;
 import java.util.Scanner;
-public class Ex1 {
+public class Ex1_HIWHD {
     public void main(){
         Scanner s = new Scanner(System.in);
-        PiggyBank pb = new PiggyBank();
+        PiggyBank_HIWHD pb = new PiggyBank_HIWHD();
         boolean cont = true;
         while (cont){
             System.out.println("1. Show total in bank.");
@@ -17,23 +17,28 @@ public class Ex1 {
             switch (s.nextInt()){
                 default:
                 case 1:
-                    System.out.println("You have: $" + pb.getValue());
+                    System.out.println("You have: $" + pb.value);
                     break;
                 case 2:
-                    System.out.println("You now have: $" + pb.addPenny());
+                    pb.value += 0.01;
+                    System.out.println("You now have: $" + pb.value);
                     break;
                 case 3:
-                    System.out.println("You now have: $" + pb.addNickel());
+                    pb.value += 0.05;
+                    System.out.println("You now have: $" + pb.value);
                     break;
                 case 4:
-                    System.out.println("You now have: $" + pb.addDime());
+                    pb.value += 0.10;
+                    System.out.println("You now have: $" + pb.value);
                     break;
                 case 5:
-                    System.out.println("You now have: $" + pb.addQuarter());
+                    pb.value += 0.25;
+                    System.out.println("You now have: $" + pb.value);
                     break;
                 case 6:
                     System.out.print("Enter an amount to remove: ");
-                    System.out.println("You now have: $" + pb.remove(s.nextDouble()));
+                    pb.value -= s.nextDouble();
+                    System.out.println("You now have: $" + pb.value);
                     break;
                 case 0:
                     cont = false;

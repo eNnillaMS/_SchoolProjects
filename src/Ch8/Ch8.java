@@ -2,9 +2,11 @@ package Ch8;
 import java.util.Scanner;
 //TODO  import Ch8.Bonus.Bonus;
 import Ch8.Ex1MySavings.Ex1;
+import Ch8.Ex2DigitExtractor.Ex2;
 public class Ch8 {
     //TODO  Bonus Tester = new Bonus();
     Ex1 MySavings = new Ex1();
+    Ex2 DigitExtractor = new Ex2();
     public void menu(){
         Scanner input = new Scanner(System.in);
         System.out.println("00: Bonus Class Tests");
@@ -21,6 +23,9 @@ public class Ch8 {
                 break;
             case 1:
                 MySavings.main();
+                break;
+            case 2:
+                DigitExtractor.main();
                 break;
             default:
                 System.out.println("Invalid selection. Quitting.");

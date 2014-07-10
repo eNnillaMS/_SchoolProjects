@@ -1,10 +1,10 @@
-package Ch8.Bonus;
-public class Heater {
+package Bonus;
+public class CH8Heater {
     private double temperature;
     private final double min;
     private final double max;
     private double increment;
-    public Heater(double newMin, double newMax){
+    public CH8Heater(double newMin, double newMax){
         temperature = 15;
         increment = 5;
         min = newMin;

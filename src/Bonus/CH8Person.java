@@ -1,5 +1,5 @@
-package Ch8.Bonus;
-public class Person {
+package Bonus;
+public class CH8Person {
     private String firstName;
     private String lastName;
     private String email;

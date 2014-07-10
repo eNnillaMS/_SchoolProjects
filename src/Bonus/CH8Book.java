@@ -1,12 +1,12 @@
-package Ch8.Bonus;
-public class Book {
+package Bonus;
+public class CH8Book {
     private final String author;
     private final String title;
     private final int pages;
     private String refNumber;
     private int borrowed;
     private final boolean courseText;
-    public Book(String bookAuthor, String bookTitle, int bookPages, boolean isTextbook){
+    public CH8Book(String bookAuthor, String bookTitle, int bookPages, boolean isTextbook){
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
